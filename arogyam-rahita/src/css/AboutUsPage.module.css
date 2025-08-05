@@ -1,30 +1,69 @@
+:root {
+    --primary-color: red;
+    --text-color: #313131;
+    --secondary-text-color: #737373;
+    --light-text-color: #A0A0A0;
+    --background-color: #F8F8F8;
+    --border-color: #D3D3D3;
+}
+
+
+/* --- General Styles ---  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
 .pageContainer {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 50px 120px;
     padding-top: 12vh;
 }
 
-h1,
-h2,
-h3 {
-    color: var(--text-color);
+.headerContentH1,
+.sectionWhoWeAreH2,
+.sectionWhoWeAreH3,
+.sectionWhyChooseUsH2,
+.featureCardH3,
+.visionContentH2,
+.sectionGrowTogetherH2,
+.sectionTeamH2,
+.teamMemberH3,
+.teamMemberP,
+.logo,
+.sectionTitle {
+    /* color: var(--primary-color); */
     font-weight: 600;
     margin-top: 0;
 }
 
-h1 {
+.headerContentH1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-h2 {
+.sectionWhoWeAreH2,
+.sectionWhyChooseUsH2,
+.visionContentH2,
+.sectionGrowTogetherH2,
+.sectionTeamH2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2.5rem;
 }
 
-h3 {
+.sectionWhoWeAreH3,
+.featureCardH3,
+.teamMemberH3,
+.sectionTitle {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
@@ -44,7 +83,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
 }
 
 section {
@@ -112,6 +151,10 @@ section {
     margin: 0;
 }
 
+.navList li {
+    list-style: none;
+}
+
 .nav_box {
     font-weight: 400;
     display: flex;
@@ -126,20 +169,19 @@ section {
 }
 
 .nav_box:hover {
-    color: red;
+    color: var(--primary-color);
     transform: scale(1.05);
     cursor: pointer;
 }
 
 .headerIcon {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .hamburgerIcon {
     display: flex;
-
     background-color: #F3F9FB;
-    color: var(--accent-color);
+    color: var(--primary-color);
     width: 48px;
     height: 48px;
     border-radius: 10px;
@@ -281,7 +323,7 @@ section {
 .teamGrid {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
     flex-wrap: wrap;
 }
 
@@ -313,13 +355,13 @@ section {
     margin-bottom: 5.5rem;
 }
 
-.teamMember h3 {
+.teamMemberH3 {
     margin-top: 60px;
     font-size: 1.125rem;
     margin-bottom: 0.25rem;
 }
 
-.teamMember p {
+.teamMemberP {
     font-size: 0.875rem;
     color: var(--light-text-color);
     margin: 0;
@@ -366,7 +408,7 @@ section {
 }
 
 .sectionTitle {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 1rem;
     color: #000000;
@@ -409,11 +451,15 @@ section {
         padding: 1.5rem;
     }
 
-    h1 {
+    .headerContentH1 {
         font-size: 2.2rem;
     }
 
-    h2 {
+    .sectionWhoWeAreH2,
+    .sectionWhyChooseUsH2,
+    .visionContentH2,
+    .sectionGrowTogetherH2,
+    .sectionTeamH2 {
         font-size: 1.8rem;
     }
 
@@ -480,13 +526,17 @@ section {
         z-index: 1000;
     }
 
-    .teamMember h3 {
+    .teamMemberH3 {
         margin-top: 45px;
     }
 
     .navList {
         flex-direction: column;
         gap: 15px;
+        width: 100%;
+    }
+
+    .navList li {
         width: 100%;
     }
 
@@ -505,11 +555,15 @@ section {
         display: flex;
     }
 
-    h1 {
+    .headerContentH1 {
         font-size: 2rem;
     }
 
-    h2 {
+    .sectionWhoWeAreH2,
+    .sectionWhyChooseUsH2,
+    .visionContentH2,
+    .sectionGrowTogetherH2,
+    .sectionTeamH2 {
         font-size: 1.75rem;
     }
 
@@ -554,15 +608,22 @@ section {
 }
 
 @media (max-width: 480px) {
-    h1 {
+    .headerContentH1 {
         font-size: 1.8rem;
     }
 
-    h2 {
+    .sectionWhoWeAreH2,
+    .sectionWhyChooseUsH2,
+    .visionContentH2,
+    .sectionGrowTogetherH2,
+    .sectionTeamH2 {
         font-size: 1.5rem;
     }
 
-    h3 {
+    .sectionWhoWeAreH3,
+    .featureCardH3,
+    .teamMemberH3,
+    .sectionTitle {
         font-size: 1.1rem;
     }
 

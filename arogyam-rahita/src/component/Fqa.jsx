@@ -1,6 +1,8 @@
 import { IoMenu, IoCartOutline } from "react-icons/io5";
 import { LuUser } from "react-icons/lu";
 import styles from "../css/Fqa.module.css";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 import React, { useState } from "react";
 
 const Fqa = () => {
@@ -235,7 +237,8 @@ const Fqa = () => {
                                             aria-controls={`faq-answer-${uniqueIndex}`}
                                         >
                                             <span>{item.question}</span>
-                                            <span className={styles.dropdownIcon}>▾</span>
+                                            <span className={styles.dropdownIcon}><RiArrowDropDownLine />
+                                            </span>
                                         </button>
                                         <div
                                             id={`faq-answer-${uniqueIndex}`}

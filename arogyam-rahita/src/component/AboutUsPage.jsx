@@ -48,7 +48,7 @@ const AboutUsPage = () => {
                     </ul>
                 </div>
             </header>
-
+            {/* main body  */}
             <div className={styles.pageContainer}>
                 <nav className={styles.breadcrumbs}>
                     <a href="#">Home</a> / <a href="#">About Us</a>
@@ -56,7 +56,7 @@ const AboutUsPage = () => {
 
                 <header className={styles.sectionHeader}>
                     <div className={styles.headerContent}>
-                        <h1>About us</h1>
+                        <h1 className={styles.headerContentH1}>About us</h1>
                         <p>
                             Empowering Shopping. Enabling Businesses. Welcome to (Website
                             Name) - your trusted digital marketplace for everything from daily
@@ -73,8 +73,8 @@ const AboutUsPage = () => {
 
                 <main>
                     <section className={styles.sectionWhoWeAre}>
-                        <h2>Who we are</h2>
-                        <h3>
+                        <h2 className={styles.sectionWhoWeAreH2}>Who we are</h2>
+                        <h3 className={styles.sectionWhoWeAreH3}>
                             (Website Name) is a next-generation eCommerce company created with
                             a clear mission:
                         </h3>
@@ -88,13 +88,13 @@ const AboutUsPage = () => {
                     </section>
 
                     <section className={styles.sectionWhyChooseUs}>
-                        <h2>Why choose us</h2>
+                        <h2 className={styles.sectionWhyChooseUsH2}>Why choose us</h2>
                         <div className={styles.featuresGrid}>
                             <div className={styles.featureCard}>
                                 <div className={styles.featureIcon}>
                                     <FiShoppingCart />
                                 </div>
-                                <h3>One Platform, Two Markets</h3>
+                                <h3 className={styles.featureCardH3}>One Platform, Two Markets</h3>
                                 <p>
                                     We understand your unique needs and provide customized hiring
                                     strategies to ensure the perfect match
@@ -104,7 +104,7 @@ const AboutUsPage = () => {
                                 <div className={styles.featureIcon}>
                                     <CiDeliveryTruck />
                                 </div>
-                                <h3>Reliable Logistics</h3>
+                                <h3 className={styles.featureCardH3}>Reliable Logistics</h3>
                                 <p>
                                     Fast, trackable delivery across India powered by trusted
                                     courier and warehousing partners.
@@ -114,7 +114,7 @@ const AboutUsPage = () => {
                                 <div className={styles.featureIcon}>
                                     <GrSecure />
                                 </div>
-                                <h3>Secure & Scalable</h3>
+                                <h3 className={styles.featureCardH3}>Secure & Scalable</h3>
                                 <p>
                                     Built on enterprise-grade infrastructure with strong data
                                     protection, uptime, and performance.
@@ -124,7 +124,7 @@ const AboutUsPage = () => {
                                 <div className={styles.featureIcon}>
                                     <LiaSmsSolid />
                                 </div>
-                                <h3>Customer-First</h3>
+                                <h3 className={styles.featureCardH3}>Customer-First</h3>
                                 <p>
                                     Live chat, loyalty rewards, easy returns - we put your
                                     satisfaction at the core of everything we do.
@@ -134,7 +134,7 @@ const AboutUsPage = () => {
                                 <div className={styles.featureIcon}>
                                     <AiOutlineDiscord />
                                 </div>
-                                <h3>Innovation-Driven</h3>
+                                <h3 className={styles.featureCardH3}>Innovation-Driven</h3>
                                 <p>
                                     Al-powered product recommendations, smart filters, and
                                     personalized experiences that evolve with you.
@@ -148,7 +148,7 @@ const AboutUsPage = () => {
                             <img src={secondImg} alt="Vision" />
                         </div>
                         <div className={styles.visionContent}>
-                            <h2>Our Vision</h2>
+                            <h2 className={styles.visionContentH2}>Our Vision</h2>
                             <p className={styles.quote}>
                                 To become India's most customer-centric and trusted digital
                                 commerce platform, blending value, variety, and innovation"
@@ -162,7 +162,7 @@ const AboutUsPage = () => {
                     </section>
 
                     <section className={styles.sectionGrowTogether}>
-                        <h2>Let's Grow Together</h2>
+                        <h2 className={styles.sectionGrowTogetherH2}>Let's Grow Together</h2>
                         <p>
                             Whether you're a college student looking for the best gadget deal,
                             a fashion-forward shopper, a small business sourcing office
@@ -184,8 +184,8 @@ const AboutUsPage = () => {
                                             }`}
                                         alt={`Team member ${i + 1}`}
                                     />
-                                    <h3>Member {i + 1}</h3>
-                                    <p>Role {i + 1}</p>
+                                    <h3 className={styles.teamMemberH3}>Member {i + 1}</h3>
+                                    <p className={styles.teamMemberP}>Role {i + 1}</p>
                                 </div>
                             ))}
                         </div>
@@ -267,7 +267,7 @@ const AboutUsPage = () => {
 
                 {/* Copyright section */}
                 <div className={styles.copyrightSection}>
-                    <p>&copy; 2025 Name All Rights Reserved</p>
+                    <p className={styles.copyrightSectionP}>&copy; 2025 Name All Rights Reserved</p>
                 </div>
             </footer>
         </>
