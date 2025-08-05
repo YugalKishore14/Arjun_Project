@@ -1,0 +1,602 @@
+.pageContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 12vh;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-color);
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+section {
+    padding: 4rem 0;
+}
+
+
+/* --- Header Styles (Desktop) --- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    height: 10vh;
+    background-color: white;
+}
+
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1280px;
+}
+
+.headerBox {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.headerInner {
+    padding-right: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logoContainer {
+    margin-right: 20%;
+}
+
+.logoText {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    color: var(--text-color);
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_box {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 50px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav_box:hover {
+    color: red;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.headerIcon {
+    color: var(--accent-color);
+}
+
+.hamburgerIcon {
+    display: flex;
+
+    background-color: #F3F9FB;
+    color: var(--accent-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+/* --- Main Page Content Styles (Desktop) --- */
+.breadcrumbs {
+    font-size: 0.875rem;
+    color: var(--light-text-color);
+    margin-bottom: 1rem;
+}
+
+.breadcrumbs a {
+    color: var(--light-text-color);
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2rem 0 4rem 0;
+}
+
+.headerContent {
+    flex: 1;
+}
+
+.headerImage {
+    flex: 1;
+    max-width: 500px;
+}
+
+.headerImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+.sectionWhoWeAre {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+.missionStatement {
+    font-size: 1.125rem;
+    color: #374151;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    gap: 16px;
+}
+
+.featureCard {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.featureIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    width: 50px;
+    height: 50px;
+    background-color: #EFF5FF;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.sectionVision {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.visionImage {
+    flex: 1;
+    max-width: 450px;
+}
+
+.visionImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+.visionContent {
+    flex: 1.2;
+}
+
+.quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #374151;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sectionGrowTogether {
+    text-align: center;
+}
+
+.sectionGrowTogether p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+.growBannerImage img {
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    border-radius: 0.75rem;
+}
+
+.teamGrid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.teamMember {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem 1.5rem 1.5rem;
+    width: 200px;
+    height: 20vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.teamMember img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+    border: 2px solid var(--border-color);
+}
+
+.sectionTeamH2 {
+    margin-bottom: 5.5rem;
+}
+
+.teamMember h3 {
+    margin-top: 60px;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.teamMember p {
+    font-size: 0.875rem;
+    color: var(--light-text-color);
+    margin: 0;
+}
+
+.footerContainer {
+    background-color: #e6e6e6;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 3rem;
+    padding-bottom: 2rem;
+}
+
+.footerSection {
+    flex: 1;
+}
+
+.logoSection {
+    max-width: 300px;
+}
+
+.logo {
+    letter-spacing: 5%;
+    font-size: 90px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #555;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.navLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navLinks li {
+    margin-bottom: 0.5rem;
+}
+
+.navLinks a {
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #737373;
+}
+
+.navLinks a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.copyrightSection {
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+
+/* --- Responsive Design --- */
+
+@media (max-width: 1024px) {
+    .pageContainer {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .headerContainer {
+        width: 90%;
+    }
+
+    .logoContainer {
+        margin-right: 10%;
+    }
+
+    .navList {
+        gap: 25px;
+    }
+
+    .sectionHeader,
+    .sectionVision {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .visionImage {
+        order: -1;
+    }
+
+    .quote {
+        padding-left: 1rem;
+    }
+
+    .teamGrid {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+        min-height: 8vh;
+    }
+
+    .headerContainer {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .headerBox {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .headerInner {
+        display: none;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .teamMember h3 {
+        margin-top: 45px;
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav_box {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav_box:last-child {
+        border-bottom: none;
+    }
+
+    .hamburgerIcon {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .pageContainer {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .headerImage {
+        max-width: 100%;
+    }
+
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionTeamH2 {
+        margin-bottom: 4rem;
+    }
+
+    .teamMember {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerSection {
+        margin-bottom: 2rem;
+    }
+
+    .logoSection {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .logoText {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .footerContainer {
+        padding: 2rem 1rem;
+    }
+
+    .nav_box {
+        font-size: 0.9rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .growBannerImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .teamMember {
+        height: 25vh;
+    }
+}
