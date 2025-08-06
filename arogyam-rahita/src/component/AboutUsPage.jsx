@@ -51,13 +51,13 @@ const AboutUsPage = () => {
             {/* main body  */}
             <div className={styles.pageContainer}>
                 <nav className={styles.breadcrumbs}>
-                    <a href="#">Home</a> / <a href="#">About Us</a>
+                    <a className={styles.breadcrumbsA} href="#">Home</a> / <a className={styles.breadcrumbsA} href="#">About Us</a>
                 </nav>
 
                 <header className={styles.sectionHeader}>
                     <div className={styles.headerContent}>
                         <h1 className={styles.headerContentH1}>About us</h1>
-                        <p>
+                        <p className={styles.headerContentP}>
                             Empowering Shopping. Enabling Businesses. Welcome to (Website
                             Name) - your trusted digital marketplace for everything from daily
                             essentials and gadgets to professional supplies and industrial
@@ -72,7 +72,7 @@ const AboutUsPage = () => {
                 </header>
 
                 <main>
-                    <section className={styles.sectionWhoWeAre}>
+                    <section style={{ padding: "4rem 0" }} className={styles.sectionWhoWeAre}>
                         <h2 className={styles.sectionWhoWeAreH2}>Who we are</h2>
                         <h3 className={styles.sectionWhoWeAreH3}>
                             (Website Name) is a next-generation eCommerce company created with
@@ -87,7 +87,7 @@ const AboutUsPage = () => {
                         </p>
                     </section>
 
-                    <section className={styles.sectionWhyChooseUs}>
+                    <section style={{ padding: "4rem 0" }} className={styles.sectionWhyChooseUs}>
                         <h2 className={styles.sectionWhyChooseUsH2}>Why choose us</h2>
                         <div className={styles.featuresGrid}>
                             <div className={styles.featureCard}>
@@ -95,7 +95,7 @@ const AboutUsPage = () => {
                                     <FiShoppingCart />
                                 </div>
                                 <h3 className={styles.featureCardH3}>One Platform, Two Markets</h3>
-                                <p>
+                                <p className={styles.p}>
                                     We understand your unique needs and provide customized hiring
                                     strategies to ensure the perfect match
                                 </p>
@@ -105,7 +105,7 @@ const AboutUsPage = () => {
                                     <CiDeliveryTruck />
                                 </div>
                                 <h3 className={styles.featureCardH3}>Reliable Logistics</h3>
-                                <p>
+                                <p className={styles.p}>
                                     Fast, trackable delivery across India powered by trusted
                                     courier and warehousing partners.
                                 </p>
@@ -115,7 +115,7 @@ const AboutUsPage = () => {
                                     <GrSecure />
                                 </div>
                                 <h3 className={styles.featureCardH3}>Secure & Scalable</h3>
-                                <p>
+                                <p className={styles.p}>
                                     Built on enterprise-grade infrastructure with strong data
                                     protection, uptime, and performance.
                                 </p>
@@ -125,7 +125,7 @@ const AboutUsPage = () => {
                                     <LiaSmsSolid />
                                 </div>
                                 <h3 className={styles.featureCardH3}>Customer-First</h3>
-                                <p>
+                                <p className={styles.p}>
                                     Live chat, loyalty rewards, easy returns - we put your
                                     satisfaction at the core of everything we do.
                                 </p>
@@ -135,7 +135,7 @@ const AboutUsPage = () => {
                                     <AiOutlineDiscord />
                                 </div>
                                 <h3 className={styles.featureCardH3}>Innovation-Driven</h3>
-                                <p>
+                                <p className={styles.p}>
                                     Al-powered product recommendations, smart filters, and
                                     personalized experiences that evolve with you.
                                 </p>
@@ -143,7 +143,7 @@ const AboutUsPage = () => {
                         </div>
                     </section>
 
-                    <section className={styles.sectionVision}>
+                    <section style={{ padding: "4rem 0" }} className={styles.sectionVision}>
                         <div className={styles.visionImage}>
                             <img src={secondImg} alt="Vision" />
                         </div>
@@ -161,7 +161,7 @@ const AboutUsPage = () => {
                         </div>
                     </section>
 
-                    <section className={styles.sectionGrowTogether}>
+                    <section style={{ padding: "4rem 0" }} className={styles.sectionGrowTogether}>
                         <h2 className={styles.sectionGrowTogetherH2}>Let's Grow Together</h2>
                         <p>
                             Whether you're a college student looking for the best gadget deal,
@@ -174,7 +174,7 @@ const AboutUsPage = () => {
                         </div>
                     </section>
 
-                    <section className={styles.sectionTeam}>
+                    <section style={{ padding: "4rem 0" }} className={styles.sectionTeam}>
                         <h2 className={styles.sectionTeamH2}>Our Team</h2>
                         <div className={styles.teamGrid}>
                             {[...Array(5)].map((_, i) => (

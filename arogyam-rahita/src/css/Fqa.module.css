@@ -17,11 +17,11 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     font-family: Poppins, sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
-}
+} */
 
 .header {
     position: fixed;
@@ -124,9 +124,8 @@ body {
 
 
 
-/* --- Main Body FAQ Styles (Responsive) --- */
+/* Main Body  */
 .faqContainer {
-    /* max-width: 1500px; */
     width: 100%;
     margin: 40px auto;
     padding-top: 12vh;
@@ -147,7 +146,6 @@ body {
 
 .mainContent {
     padding-top: 40px;
-    /* background-color: var(--main-bg-color); */
 }
 
 .mainTitle {
@@ -347,11 +345,7 @@ body {
 }
 
 
-
-
 /* --- Media Queries --- */
-
-
 
 @media (max-width: 1200px) {
     .faqContainer {

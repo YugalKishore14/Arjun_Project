@@ -15,15 +15,6 @@
     --font-main: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: var(--font-main);
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
 /* Header */
 .header {
     position: fixed;
