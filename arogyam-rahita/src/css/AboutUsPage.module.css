@@ -1,5 +1,4 @@
 :root {
-    --primary-color: red;
     --text-color: #313131;
     --secondary-text-color: #737373;
     --light-text-color: #A0A0A0;
@@ -22,7 +21,8 @@ body {
 }
 
 .pageContainer {
-    max-width: 1280px;
+    /* max-width: 1280px; */
+    width: 100%;
     margin: 0 auto;
     padding: 50px 120px;
     padding-top: 12vh;
@@ -169,19 +169,19 @@ section {
 }
 
 .nav_box:hover {
-    color: var(--primary-color);
+    color: red;
     transform: scale(1.05);
     cursor: pointer;
 }
 
 .headerIcon {
-    color: var(--primary-color);
+    color: red;
 }
 
 .hamburgerIcon {
     display: flex;
     background-color: #F3F9FB;
-    color: var(--primary-color);
+    color: red;
     width: 48px;
     height: 48px;
     border-radius: 10px;
@@ -297,7 +297,7 @@ section {
     font-size: 1.25rem;
     font-style: italic;
     color: #374151;
-    border-left: 3px solid var(--primary-color);
+    border-left: 3px solid red;
     padding-left: 1.5rem;
     margin-bottom: 2rem;
 }
