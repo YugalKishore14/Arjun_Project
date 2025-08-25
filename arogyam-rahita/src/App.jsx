@@ -3,7 +3,8 @@ import React from 'react'
 // import Fqa from './component/Fqa';
 // import ReturnRefund from "./component/ReturnRefund"
 // import Services from './component/Services'
-import TermCom from './component/TermCom'
+// import TermCom from './component/TermCom'
+import ProductPage from './component/ProductPage'
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       {/* <Fqa /> */}
       {/* <ReturnRefund /> */}
       {/* <Services /> */}
-      <TermCom />
+      {/* <TermCom /> */}
+      <ProductPage />
     </>
   )
 }
